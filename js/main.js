@@ -14,15 +14,6 @@ for (let i = 0; i < 10; i++) {
     .then((data) => {
       currentMail = data.response;
       console.log(currentMail);
-      listaMail.innerHTML = `<li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>
-      <li>${currentMail}</li>`;
+      listaMail.innerHTML += `<li>${currentMail}</li>`;
     });
 }
